@@ -25,6 +25,15 @@ Flags come in different aspect ratios, so the width can vary. Check out [this JS
 
 Contributions of other flags welcome!
 
+### Crawling/discovering flag URLs
+
+You can use the [Github Repo Contents API](http://developer.github.com/v3/repos/contents/) to get a quick JSON view of each directory in the repository.
+
+To get a list of all flags, visit:
+
+> [https://api.github.com/repos/isitchristmas/flags/contents/flags/?ref=gh-pages](https://api.github.com/repos/isitchristmas/flags/contents/flags/?ref=gh-pages)
+
+
 ### Scoche of code
 
 There's also a [hacky Node script](https://github.com/isitchristmas/flags/blob/master/flagpedia.js) I used to scrape Flagpedia.
