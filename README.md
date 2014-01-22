@@ -12,14 +12,14 @@ A large Irish flag:
 
 > [http://isitchristmas.io/flags/flags/IE/big.png](http://isitchristmas.io/flags/flags/IE/big.png)
 
-Sizes:
+Each size has a guaranteed dimension:
 
 * `mini` - height of 20px
-* `normal` - height of 275px
-* `big` - height of 800px
-* `ultra` - height of 1280px
+* `normal` - width of 550px
+* `big` - width of 1600px
+* `ultra` - width of 2560px
 
-Flags come in different aspect ratios, so the width can vary. Check out [this JSON snippet](https://github.com/isitchristmas/web/blob/master/public/js/christmas.js#L237) if you want to grab pre-extracted dimensions.
+Flags come in different aspect ratios, so the other dimension can vary. Check out [this JSON snippet](https://github.com/isitchristmas/web/blob/master/public/js/christmas.js#L237) if you want to grab pre-extracted dimensions.
 
 **Note**: This does not have every flag in isitchristmas.com -- only flags of sovereign nations. There are some territories and other flags that were gathered separately. This only (currently) includes flags from Flagpedia.
 

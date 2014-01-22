@@ -4,13 +4,32 @@
 <title>Flags</title>
 
 <script type="text/javascript" src="https://isitchristmas.com/js/christmas.js"></script>
+<style type="text/css">
+  .flag {
+    border: 1px solid #eee;
+    margin: 2px;
+  }
+</style>
 </head>
 <body>
 
-<a href="https://github.com/isitchristmas/flags">flags</a> from <a href="http://flagpedia.net">flagpedia</a>
+<p>
+  <a href="https://github.com/isitchristmas/flags">flags</a> from <a href="http://flagpedia.net">flagpedia</a>
+</p>
+
+<section></section>
 
 <script type="text/javascript">
-//Christmas.countries
+var section = document.getElementsByTagName("section")[0];
+
+Object.keys(Christmas.countries).sort().forEach(function(country) {
+  if (!Christmas.countries[country].width) return;
+
+  var img = document.createElement("img");
+  img.className = "flag";
+  img.src = "https://isitchristmas.com/countries/" + country + ".png";
+  section.appendChild(img);
+});
 </script>
 
 </body>
