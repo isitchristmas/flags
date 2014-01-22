@@ -5,9 +5,18 @@
 
 <script type="text/javascript" src="https://isitchristmas.com/js/christmas.js"></script>
 <style type="text/css">
-  .flag {
+  .normal .flag {
     border: 1px solid #eee;
     margin: 2px;
+  }
+
+  .tight {
+    line-height: 0;
+    width: 580px;
+    border: 1px solid #aaa;
+  }
+  .tight .flag {
+    border: 0; margin: 0; padding: 0;
   }
 </style>
 </head>
@@ -17,10 +26,17 @@
   <a href="https://github.com/isitchristmas/flags">flags</a> from <a href="http://flagpedia.net">flagpedia</a>
 </p>
 
-<section></section>
+<section class="normal"></section>
+
+<p>
+the world's flag:
+</p>
+
+<section class="tight"></section>
 
 <script type="text/javascript">
-var section = document.getElementsByTagName("section")[0];
+var normal = document.getElementsByTagName("section")[0];
+var tight = document.getElementsByTagName("section")[1];
 
 Object.keys(Christmas.countries).sort().forEach(function(country) {
   if (!Christmas.countries[country].width) return;
@@ -28,7 +44,8 @@ Object.keys(Christmas.countries).sort().forEach(function(country) {
   var img = document.createElement("img");
   img.className = "flag";
   img.src = "https://isitchristmas.com/countries/" + country + ".png";
-  section.appendChild(img);
+  normal.appendChild(img);
+  tight.appendChild(img.cloneNode());
 });
 </script>
 
