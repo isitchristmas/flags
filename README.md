@@ -23,6 +23,9 @@ Flags come in different aspect ratios, so the other dimension can vary. Check ou
 
 **Note**: This does not have every flag in isitchristmas.com -- only flags of sovereign nations. There are some territories and other flags that were gathered separately. This only (currently) includes flags from Flagpedia.
 
+Also: I **cannot provide HTTPS permalinks** for these images, as Github Pages does not support SSL. If you want to use these images on your website and worry about showing your users mixed content warnings, you'll need to host these images elsewhere. If this seems weird to you, [write Github support](mailto:support@github.com) to request SSL support for Github Pages.
+
+
 Contributions of other flags welcome!
 
 ### Crawling/discovering flag URLs
